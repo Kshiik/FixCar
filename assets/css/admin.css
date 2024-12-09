@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #002b5c;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.create-request-button {
+    background-color: #f5deb3;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Добавление горизонтальной прокрутки */
+    background-color: #fff; /* Белый фон для контейнера таблицы */
+    box-sizing: border-box;
+    padding: 10px; /* Внутренние отступы для улучшения восприятия */
+}
+
+table {
+    width: 100%;
+    min-width: 600px; /* Минимальная ширина таблицы для лучшего отображения на мобильных устройствах */
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f7f7f7;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Адаптивный дизайн */
+@media (width: 391px) {
+
+
+    .create-request-button {
+        width: 100%;
+        text-align: center;
+        padding: 5px 10px; 
+        font-size: 14px;
+        margin-top: 10px; 
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+    .table-container {
+                overflow-x: auto;
+            }
+    th, td {
+        padding: 5px; 
+    }
+}
